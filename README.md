@@ -50,6 +50,19 @@ Local image hosting via Express (`/uploads`)
 
 ---
 
+## 📸 Screenshots
+
+### 🏠 Home Page
+![Home Page](screenshots/home.png)
+
+### 🎬 Login Page
+![Movie Details](screenshots/login.png)
+
+### 🔎 Browse Page
+![Browse](screenshots/browse.png)
+
+---
+
 ## 🛠 Setup & Installation
 
 ### 1️⃣ Clone the repository
@@ -87,15 +100,3 @@ http://localhost:4000
 Open the browser and Streamflix will load automatically.
 
 ---
-
-## 📸 Screenshots
-
-### 🏠 Home Page
-![Home Page](screenshots/home.png)
-
-### 🎬 Login Page
-![Movie Details](screenshots/login.png)
-
-### 🔎 Browse Page
-![Browse](screenshots/browse.png)
-
