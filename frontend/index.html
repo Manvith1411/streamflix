@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Streamflix — Browse movies</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="header-left">
+      <div class="brand">
+        <span class="logo">STREAMFLIX</span>
+      </div>
+
+      <nav aria-label="Primary" class="main-nav">
+        <a href="#home" id="link-home">Home</a>
+        <a href="#browse" id="link-browse">Browse</a>
+        <a href="#login" id="link-login">Login</a>
+        <a href="#register" id="link-register">Register</a>
+      </nav>
+    </div>
+
+    <div class="header-right">
+      <button class="icon-btn" aria-label="Search (visual only)">🔍</button>
+
+      <div class="profile" id="profile-btn" aria-haspopup="true" aria-expanded="false">
+        <img id="profile-avatar" src="https://via.placeholder.com/40/0f1417/ffffff?text=?" alt="profile">
+      </div>
+
+      <div id="profile-dropdown" class="profile-dropdown hidden" role="menu" aria-hidden="true">
+        <div class="profile-info">
+          <img id="dropdown-avatar" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAilBMVEX///8AAAD5+fn09PTW1tbm5ubd3d3l5eXBwcHExMTPz8/r6+vx8fHh4eFvb29qampBQUFQUFAuLi6kpKSUlJQXFxeOjo61tbUmJiZ5eXlGRkZycnLJycmGhoY1NTWdnZ1iYmKBgYENDQ0fHx88PDxbW1utra25ublOTk4oKCgwMDCZmZmjo6MYGBgQLmDQAAANU0lEQVR4nO1dZ3vivBINNhAMpocWILQkm102///v3SVFM5Jl0BlLdt77+Hy2rDaartHdXY0aNWrUqFGjRo0aNWrUqFGjBoIoinv37Wa32b7vxVFU9XA8otdP/m6Hj78bOn4/Dg+7TrtX9fCKobU5D0eN6xjt50m/6oGK0FqszG3Lx2mwaFU9YAhxd750nt03ZttNXPXA3RAna3h23xh0fv4ku8OTeH4XvA+7VU/hGuK/OHFaJrlLq55IDtpy6jSxblY9GQuSF2/zu2CcVD0hA8nz9QE/Hs7TxeZDnbkoNpvF9LwdXz+xo07Vk2LY/Mkd59NwmuTrLb1kOnzKb7spcQ7X0Myjz5ftxkUpa20e8v4w/gnnMV1Zx3Y6dBCOmG4OdppdVS4gp9ZxbSVr35wfbf+aeh8zgr5Nry4gs7tryyRHbY8jBnHODufxtZi4Tl8ti/bgabwoWo+ZoYx9cL9ulu+M7j38F8Zrljx92Xn9Qebfr55+7Y54mJmfz+PSzv6+ZKbaN2W8d8mVkbKTUj0BHaP3YwgNK3k3evkVoJMczI2uQ/G6B6OfeaB+MjCspHE4edUf610NgvXEERm9huVyBsd+K8HPmk60Lp9DS6p73S6bBLf/e7qCXMbJ0E/9KbAPuTXTuivHSNU59ywo1egTnJTlxW09lTXFnjbBchjbJzQ1bhZsZVPtDG5DdWOFdhhPgdhNpHHRslVhTWz8CSM0NDlYviNM4zfjED1oR6EK13s3MBOYVz1BY4reJfGv6idoTNGzpdHn/67OUatN0au9GHM2WqW3nbObiU+rn/sUyveYcHChMQzz23IFfRbzEIvdCsulQXB68qW+Mb/ok6dfFgFzgo38/PHB46LFaS8tyiA4SZ0L/usDXFAUYKPtxXa8/LRNZsvxdlHAucMZqg+RweIIUj2i97pvZLF/lZrrjNs8Cn/BwMJnz6IfRJ38CP/LL5mRwHw3hflpysYjsa2j3fXcr+VZMsd79oeix5pFeCWr9ffq9D6xE/yXSeiVoDlDk/4kMMk2brl7S0FmCTNWi0VM2I9grhXZI/w2rGBSbVPjF7Qtx4b+A8cm2kgG2BJeP8ZPixhz5MWboU0XwPwuWKAdUMS/gKKV0ABQWW+Gjf7h9LLaLZJustitXiypJSiRMLkvzxAjsYOyGTP+1njb9Tlbj/u7N/MTVJ8gHiFWT9kWgvxqawx+a9NnW+YygFNkfF66ibRIoK1pkGiuUI/OevoMqEeTHSVkp2yNMDVZZzLraw7qVM+6wNgNkxgymUihXmwLNa/VTRaVaF9jQoM2cQ21+0Iq7DfiiszodoQh5klQvyHRz9ZSEsnYCan8wAa8d2rBbY8D1BdxColySyIL8o9yl6Yr7fDDCCkopHMtkWbmSDEjk8ly971nu4gNlSgcV93oFENWEzOXEIOZmbRQPilZUbATMFZ7cUQOccSixIiPokfNZgizSZVAPaGWMDFxiBEznwcWOWGRH2gT6Qijeg21RAg8Il8mSjXkq4ICvMQuQJEYq4ZHpBnT91E/GqNTaDdI78PIlNgwFKegjcAdj6StQyoUNcOCfqT2Ixof7XwD96AJG5P2jC2qSu08Ia1I5ZZEqA6qNaSAn0RDpdAApEWRDJX47MlUgLgULQxy9GkzoFOvWsl87aSgIK2IuyFbT4YTIu5J1ZcFOOjwI8YM2UCIvFCOQMisoNWUGaTENCC/l1JqAZWWwgLQZijnxUyWd5YqlQ/yu9HWu0c3SWWDZIyShtKQlwo275FWG8FoyZMEaSaKU0iTJBQvhtyDxPjdt15tBuZNVh5yaSR1LutXKcN75yayzYgUf5JGLZVlgrlr1IY4bz0pwZAhQyalNOVMmVCYsUdWt+uhIrkGyftUqXrShAYlbt4hZkyM0VWOklyDGE1le0g057q05EeExkeOUunVXeE5JG3R1ad4+G4AWb8eeKmy9cCIoLKCXU0aJZbAmJpMYDNIVQblGHbl/Y/oknxBJrAZpCrDFl0ZdZ7AaJc6v0dZslNPURvoo1d3yidu30fq4IIcg3iwLHeA/GaguCEfphuHohmC2QPEtWVptuRUAmlgAc6QXEJoyrpqKMuOoMwPsCGJfDc5SluBGrIrccsLyABGE7mopdvmk/2L+pPoIEqSpcnNjmp95MNySy5EvyfQCRbEZFnMGXW2onuC7jkDebCwWO4FB9UWDsqj54qYNpy6yQLAaKIaS6yAZU0MNi2whyytH01xoRQp3MuD7iGtJp6Zz1JpMEOfBR7hHD52Dt1mSN8LEuFZyiXSmtGoIOeAWrtxGrk8vNNiuTP3Yxyz7C+B+YyeK7lOcwG7YDNy5foRayTxtaI6jVgv/QCjt8bYURHmKUOSqBWql4pti0/wxMQnlzWNeOULUSEY1La4U9cpJalUGp02ZrePcpNnYL6JekTtQxoirphcwHIOHFZJL2knM50P6AJJ/TTf2GiDvlpQrq1XZxNm3SttwdX7oZYE9LUpGHn6gzwNvmVUK5JwtgsUnbsSndBfymBWUxx2sywg6poVy8QVEtUfXBkHmXniC5WZgpF/VgnfyftkNTE/EU+QwmuuUQhh3EKD7ULJZLw6vy5ez6s3230oKYnyHXFVFIWxJx3dmWUW+TgWuNpDBOPMigsHcy/oja1TseOtSPUngSdaedf/FOjXejMoB8VK2gliwDS0Ane3uyt3On0fFKi1QYzG3UcvyW7Qke6sFXOv4HiWlkaSjJZsYBn5tN3vVnKsZDfYKZ8G8A3KcqK+0M/UHnXGXjJHxdEQ7wBpUzCP69mu3gNzxDtUbRFXuTA38Z8qdp1/Hk/LyfJ0/Yg+gP5gMvARnUGYX3rXybv7O1rNF837Vi+N4zjtte6bi/kq7wWaJebUP6iG0PYrRv8ONIrsB3A/bdq3JWpO7SQ9RLZRNFRZnndiGevkcEsb684zKngDORzSPO8u3s68GdtozFZuymb3kNUNnGOstBeYZkseRcdr6mnmVD29Av7S18wbEA43Fz+g2NYRjLKAd2a6Jn8codrQxlyio9P5IGJDQ5YJ1NKszy56X6RjztEl8iG/9wTdXTMqmMyk2ZcLgxJuOyUK3F1jas3N8Rr36tfyijGxodDeZHNEPPhdZyLwWzclD9qglsWKKnZ1neGWwkHuckG3J8fGupQQXRvniHQP43WpQYYTdCXoC453uXUSlbuTCDrbumq/UUjnr6AjdpfsigtLcxse/dSfb2sM54o3jMW5RGefyGWf+41W1vTRV3XfSHv9JD9kSlqt7HCwuhh5m9jkI/FYilLX4fMoo3BdDEblOVI/4oV0/NaM5EUITjm0Ubi2CY8h2deIx259F8XkU7RPgBGQ2FNHapQ1zsbtef9VP/kUrQzVQ42hG6WY+CEsVFEsB9w6ttBQgSJWDGTTWEKJ7BA+haiRHjGLyiLQvdT64nlqGRXxwJY4zEtFTCJn1TdP9do4LzEkBqfRUG/4XemDFd8pdkLy6yayYmQSjckNpDmaSQje6iby2pea+sSUxxBc5huMhjQjjimLBWtfameBBaJYNrCoRJMrePlUxs181i/lm8XEDnsXMOxLWkzxZbEz5u/wUNOb5WQpfsp2NiSNXsDoVO0WM0lllX912GpBM1Yd+jUdRpDfC+y7FjRnaF/zicmDG/55SdINvxJWeT1vWeZdBsxa+wzsT81OQ4It5yc3ZzXZPdS6/gDnXB9GIEUawolCAvkqP1IPueno7eUn7jmZazqvrx6ugrrb6H4hH16hL3D/15Qp/Z6OwQ0QI9hrfqHCfj0G7Y0StqPlvA3KZBNPJvP6RomWvU2QZdjiOFh79/ywpPnyaIg+cmFdX+/P3VhSEGRJ2RJkqioHEcTZIH15b4Jn3zf36LokZHINy3r+UFdjPhDk3TXNb3KBL4XCBcYT4EH8Qnfm+4elPlyvkylW+gRBSwuZBDkKOdCYQLg3LP9NUdvFit4hDfuarL6L1bwlG/q5XP058PLfAw5Jop9IdY76HNzG13NQ/gR/0zn7LndYlmrI+jLe5b7LaDdjr08tajDfVi+NfZf1bn3BBzCKwLQ0ZiGYamJmLIb1zBpom0mhY9/RmaapBv8uy1b7QjQwBtAY+hxBO/v7cvwJHGY+YqOx98VyLPcZKnn9tPWYGcfYx0vBm+xbe6OAD8ZfxS4zlMZoWkwkp6+WFH4vL1XK0LbdKFjLN7K7ttzFeC6ZxRjInsYLtqI6UXPrVZNq3x/+h3htG1bjeEgQck2Tg+Whsn9YlaCH3kQ77xXO8XbjYum0uvO866YvoXIgUFx5yXEynCb55sd9Mh3aLpR8ta3uifMskqzk4JiND+fpImn2W7241+o3k8X0fBhfv2M6kl8kD4MEudh8G+OfNr8LhDdHbVj/lPNnIt0hL3Pm4X1XvgoKoLvGKg1kpjfwofiFRZqs32/PxI5B50dvHyHazHFynW03/5HpfaG3GLjPcjlYBPaCBkJr87Af3Sg98Lx/2FRlG3lCr9/ZbYePptpzehwczp3+f3Pr7IiiuHffbnab7X4visrxe9aoUaNGjRo1atSoUaNGjRo1/n/wPwTGmOihpBJZAAAAAElFTkSuQmCC" alt="">
+          <div>
+            <div id="dropdown-name" class="profile-name">Guest</div>
+            <div id="dropdown-email" class="profile-email muted">Not signed in</div>
+          </div>
+        </div>
+        <div class="profile-actions">
+          <button id="drop-account" class="btn btn-link">Account</button>
+          <button id="drop-logout" class="btn btn-link">Logout</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" id="app-root">
+    <section id="home" class="page hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Watch the best movies and shows</h1>
+        <p class="hero-sub">Streamflix — personalized recommendations, trailers, and more. Sign in to continue.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-play" href="#browse" id="cta-browse">▶ Browse</a>
+          <a class="btn btn-list" href="#register" id="cta-create">Create account</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="browse" class="page browse-page hidden" aria-labelledby="browse-heading">
+      <div class="browse-header">
+        <h2 id="browse-heading">Browse movies</h2>
+        <div class="controls">
+          <input id="search" placeholder="Search movies" />
+          <button id="btn-search">Search</button>
+        </div>
+      </div>
+
+      <div id="movies" class="grid" aria-live="polite"></div>
+    </section>
+
+    <section id="login" class="page auth-page hidden">
+      <div class="auth-card">
+        <h2>Sign in</h2>
+        <form id="form-login">
+          <input name="email" placeholder="Email" required />
+          <input name="password" type="password" placeholder="Password" required />
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="register" class="page auth-page hidden">
+      <div class="auth-card">
+        <h2>Create your account</h2>
+        <form id="form-register">
+          <input name="name" placeholder="Name" required />
+          <input name="email" placeholder="Email" required />
+          <input name="password" type="password" placeholder="Password" required />
+          <button type="submit" class="btn btn-primary">Create account</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <small>Streamflix — A Mini Project By M & S</small>
+  </footer>
+
+  <script src="app.js"></script>
+  <script src="app-ui.js"></script>
+</body>
+</html>

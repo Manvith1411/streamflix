@@ -1,0 +1,12 @@
+UPDATE movies SET title='Interstellar', poster_url='/uploads/inter.jpg' WHERE id=1;
+UPDATE movies SET title='Extraction', poster_url='/uploads/extra.jpg' WHERE id=2;
+UPDATE movies SET title='Red Notice', poster_url='/uploads/red.jpg' WHERE id=3;
+UPDATE movies SET title='The Gray Man', poster_url='/uploads/gray.jpg' WHERE id=4;
+UPDATE movies SET title='Bahubali 2', poster_url='/uploads/bahu.jpg' WHERE id=5;
+UPDATE movies SET title='Squid Game', poster_url='/uploads/squid.jpg' WHERE id=6;
+UPDATE movies SET title='Enola Holmes', poster_url='/uploads/enol.jpg' WHERE id=7;
+UPDATE movies SET title='RRR', poster_url='/uploads/rrr.jpg' WHERE id=8;
+UPDATE movies SET title='Stranger Things', poster_url='/uploads/st.jpg' WHERE id=9;
+UPDATE movies SET title='Adolescence', poster_url='/uploads/ados.jpg' WHERE id=10;
+UPDATE movies SET title='Cars', poster_url='/uploads/cars.jpg' WHERE id=11;
+UPDATE movies SET title='La La Land', poster_url='/uploads/lala.jpg' WHERE id=12;

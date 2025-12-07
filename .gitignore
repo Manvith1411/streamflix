@@ -1,0 +1,27 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+dist/
+build/
+
+# VS Code
+.vscode/
+
+# Uploads (local posters)
+frontend/uploads/
+
+# Logs
+*.log
+
+# Database
+*.db
